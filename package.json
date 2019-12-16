@@ -1,0 +1,19 @@
+{
+  "name": "logrocket-rabbit-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node app/server.js",
+    "consumer": "node app/Consumer/consumer.js",
+    "dev": "concurrently \"npm run server\" \"npm run consumer\""
+  },
+  "author": "Alexander Nnakwue",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "concurrently": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "restify": "^8.5.0"
+  }
+}
